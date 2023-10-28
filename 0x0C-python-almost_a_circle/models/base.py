@@ -12,6 +12,8 @@ class Base:
     def __init__(self, id=None):
         """
         init - DG 3mr 7a7a remix
+        Args:
+            id: object id
         """
         if id is not None :
             self.id = id
