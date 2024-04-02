@@ -3,6 +3,6 @@
 
 
 class Square:
-    """an empty class"""
+    "an empty class"
     pass
 
