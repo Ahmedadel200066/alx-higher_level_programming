@@ -4,7 +4,7 @@
 
 class Square:
     """ defines a function called __init__ """
-    def __init__(self, size = 0):
+    def __init__(self, size=0):
         if type(size) != int:
             """if statment type checker"""
             raise TypeError("size must be an integer")
