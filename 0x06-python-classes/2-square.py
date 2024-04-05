@@ -8,6 +8,6 @@ class Square:
         if size < 0 :
             print("ValueError")
             
-        """ initializes __size of self with size """
-        self.__size = size
+    """ initializes __size of self with size """
+    self.__size = size
         
