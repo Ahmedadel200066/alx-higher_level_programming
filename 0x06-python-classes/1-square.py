@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""class square that makes you know the size of idk"""
+"""define class name Square"""
 
 
 class Square:
