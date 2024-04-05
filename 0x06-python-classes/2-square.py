@@ -10,7 +10,7 @@ class Square:
             """if statment type checker"""
             raise TypeError("size must be an integer")
         elif size < 0:
-            """ raise an error """
+            """raise an error"""
             raise ValueError("size must be >= 0")
         else:
             """ initialize __size of self with size """
