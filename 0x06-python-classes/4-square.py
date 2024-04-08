@@ -10,13 +10,13 @@ class Square:
     def area(self):
         """ this function returns the current square area """
         return self.__size ** 2
-    
+    """ getter """
     @property 
     def size(self):
         return self.__size
     
     @size.setter
-    def size(self,value):
+    def size(self, value):
         isinstance2 = isinstance(value, int)
         if isinstance2:
             self.__size = value
