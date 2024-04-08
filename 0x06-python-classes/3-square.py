@@ -13,7 +13,6 @@ class Square:
                 raise ValueError("size must be >= 0")
         else:
             raise TypeError("size must be an integer")
-    
     def area(self):
         """ this function returns the current square area"""
         return self.__size **2
