@@ -22,15 +22,17 @@ class Square:
                 raise ValueError("size must be >= 0")
         else:
             raise TypeError("size must be an integer")
+
     def area(self):
         """ this function returns the current square area """
         return self.__size ** 2
+
     def my_print(self):
         """ this function prints in stdout the square with the character # """
         if self._size == 0:
             print("/n")
         else:
             for x in range(self.__size)
-                for y in range(self.__size)
-                print("#","")
+            for y in range(self.__size)
+            print("#", "")
             print()
