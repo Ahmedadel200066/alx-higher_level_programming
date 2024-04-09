@@ -32,7 +32,7 @@ class Square:
         if self._size == 0:
             print("/n")
         else:
-            for x in range(self.__size)
-                for y in range(self.__size)
+            for x in range(self.__size):
+                for y in range(self.__size):
                     print("#", end="")
             print()
