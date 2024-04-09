@@ -30,7 +30,7 @@ class Square:
     def my_print(self):
         """ this function prints in stdout the square with the character # """
         if self._size == 0:
-            print("/n")
+            print("")
         else:
             for x in range(self.__size):
                 for y in range(self.__size):
