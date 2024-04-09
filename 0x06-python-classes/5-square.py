@@ -33,6 +33,6 @@ class Square:
             print("/n")
         else:
             for x in range(self.__size)
-            for y in range(self.__size)
-            print("#", end="")
+                for y in range(self.__size)
+                    print("#", end="")
             print()
