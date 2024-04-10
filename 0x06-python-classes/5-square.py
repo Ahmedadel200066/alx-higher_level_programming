@@ -34,7 +34,8 @@ class Square:
         if self.__size == 0:
             print()
         else:
-            for i in range(self.__size):
+            maxx = self.__size
+            for i in range(maxx):
                 for j in range(self.__size):
                     print("#", end="")
                 print()
