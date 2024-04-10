@@ -6,33 +6,32 @@ class Square:
     """ defines a function named __init__ """
 
     def __init__(self, size=0):
-        """ init """
         self.__size = size
+        """ defines area function """
 
+    def area(self):
+        """ this function returns the current square area """
+        return self.__size ** 2
+    """ getter """
     @property
     def size(self):
         return self.__size
 
     @size.setter
     def size(self, value):
-
-        a = isinstance(value, int)
-        if a:
+        isinstance2 = isinstance(value, int)
+        if isinstance2:
             self.__size = value
             if value < 0:
                 raise ValueError("size must be >= 0")
         else:
             raise TypeError("size must be an integer")
 
-    def area(self):
-        """ area method """
-        return (self.__size*self.__size)
-
     def my_print(self):
-        """ print method """
-        if self.__size == 0:
-            print("")
+
+        if self._size == 0:
+            print()
         else:
-            for a in range(self.__size):
-                for e in range(self.__size):
+            for a in range(self.__size): 
+                for e in range(self.__size): 
                     print("".join("#" for z in range(self.__size)))
