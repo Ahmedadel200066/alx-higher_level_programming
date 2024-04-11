@@ -4,14 +4,20 @@
 
 class Square:
     """ define __init__ function """
-    def __init__(self, size=0):
-        """ initializes size of self with size """
+    def __init__(self, size=0,position=(0, 0)):
+        """ initializes size and position of self with size """
         self.size = size
-
+        self.position = position
+    
     @property
     def size(self):
         """ returns __size of self """
         return self.__size
+    def position(self):
+        """ returns position of self """
+        return self.__postition
+    
+    @position.setter
 
     @size.setter
     def size(self, value):
