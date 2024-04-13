@@ -15,10 +15,16 @@ class Square:
         return self.__size
     def position(self):
         """ returns position of self """
-        return self.__postition
+        return self.__position
     
     @position.setter
-
+    def position(self, value): 
+        if type (value) is not tuple:
+            raise TypeError("position must be a tuple of 2 positive integers")
+        else:
+            """ initialize """
+            self.__position = value
+            
     @size.setter
     def size(self, value):
         """ if statement """
