@@ -37,6 +37,7 @@ class Square:
         else:
             """ initialize """
             self.__size = value
+            
     """ defines area function """
     def area(self):
         """ returns area """
