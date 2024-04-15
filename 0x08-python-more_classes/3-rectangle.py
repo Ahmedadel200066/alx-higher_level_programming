@@ -55,5 +55,6 @@ class Rectangle:
             for b in range(self.__width):
                 shobak.append("#")
             shobak.append("\n")
+        shobak.pop()
         o = "".join(shobak)
         return o
