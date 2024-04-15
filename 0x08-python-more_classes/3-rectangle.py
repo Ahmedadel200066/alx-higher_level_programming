@@ -51,8 +51,8 @@ class Rectangle:
 
     def __str__(self):
         shobak = []
-        for g in range(self.__width):
-            for b in range(self.__height):
+        for g in range(self.__height):
+            for b in range(self.__width):
                 shobak.append("#")
             shobak.append("\n")
         o = "".join(shobak)
