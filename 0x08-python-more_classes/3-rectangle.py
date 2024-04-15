@@ -55,3 +55,5 @@ class Rectangle:
             for b in range(self.__height):
                 shobak.append("#")
             shobak.append("\n")
+        o = "".join(shobak)
+        return o
