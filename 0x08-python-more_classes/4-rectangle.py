@@ -57,3 +57,7 @@ class Rectangle:
         shobak.pop()
         o = "".join(shobak)
         return o
+
+    def __repr__(self):
+        return "Rectangle(" + str(self.__width) + str(self.__height) + ")"
+        
