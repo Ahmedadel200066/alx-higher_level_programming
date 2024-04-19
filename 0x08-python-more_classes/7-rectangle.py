@@ -52,10 +52,11 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return ""
         shobak = []
+        bol = str(self.print_symbol)
 
         for g in range(self.__height):
             for b in range(self.__width):
-                shobak.append(self.print_symbol)
+                shobak.append(bol)
             shobak.append("\n")
         shobak.pop()
         o = "".join(shobak)
