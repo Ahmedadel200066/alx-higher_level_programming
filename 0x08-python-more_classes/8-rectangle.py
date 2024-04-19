@@ -73,6 +73,6 @@ class Rectangle:
             if rect_1 != Rectangle :
                 raise TypeError("rect_1 must be an instance of Rectangle")
             if rect_2 != Rectangle :
-                raise TypeError("rect_2 must be an instance of Rectangle"
+                raise TypeError("rect_2 must be an instance of Rectangle")
             if rect_1 == rect_2 == Rectangle :
                 return rect_1
