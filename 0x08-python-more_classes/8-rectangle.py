@@ -80,5 +80,7 @@ class Rectangle:
         if rect_2.area() >= rect_1.area() :
             if rect_2.area() >= Rectangle.area():
                 return rect_2.area()
+        if rect_1.area == rect_2.area == Rectangle.area:
+            return rect_1.area()
         else:
             return Rectangle.area()
