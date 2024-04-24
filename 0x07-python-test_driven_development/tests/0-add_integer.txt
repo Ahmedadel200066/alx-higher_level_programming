@@ -30,45 +30,9 @@ test 6 :
     Traceback(most recent call last):
     ...
      ValueError: invalid literal for int() with base 10: 'eqr'
-     
+
 test 7 :
->>> add_integer(1, float('inf'))
+    >>> add_integer(1, float('inf'))
     Traceback(most recent call last):
     ...
     OverflowError: cannot convert float infinity to integer
-
-test 8 :
-    >>> add_integer(2)
-    100
-
-test 9 :
-    >>> add_integer(51, 49)
-    100
-
-test 10 :
-    >>> add_integer(1, 1)
-    2
-
-test 11 :
-    >>> add_integer(1, 1)
-    2
-
-test 12 :
-    >>> add_integer(1, 1)
-    2
-
-test 13 :
-    >>> add_integer(1, 1)
-    2
-
-test 14 :
-    >>> add_integer(1, 1)
-    2
-
-test 15 :
-    >>> add_integer(1, 1)
-    2
-
-test 16 :
-    >>> add_integer(1, 1)
-    2
