@@ -48,8 +48,10 @@ test 7 :
     OverflowError: cannot convert float infinity to integer
 
 test 8 :
-    >>> add_integer(1, 1)
-    2
+    >>> add_integer(1, "se2")
+    Traceback(most recent call last):
+    ...
+    ValueError: cannot convert string value to integer
 
 test 9 :
     >>> add_integer(1, 1)
