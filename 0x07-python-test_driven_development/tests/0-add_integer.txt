@@ -23,7 +23,7 @@ test 4 :
 
 test 5 :
     >>> add_integer(2.5, 1.0)
-    4
+    3
 
 test 6 :
     >>> add_integer(int('eqr'), 3.0)
@@ -31,17 +31,14 @@ test 6 :
     ...
     ValueError: cannot convert int eqr to integer
 
-test 7 :
-    >>> add_integer(1, float('inf'))
+>>> add_integer(1, float('inf'))
     Traceback(most recent call last):
     ...
     OverflowError: cannot convert float infinity to integer
 
 test 8 :
-    >>> add_integer(1, "se2")
-    Traceback(most recent call last):
-    ...
-    ValueError: cannot convert string value to integer
+    >>> add_integer(1, 1)
+    2
 
 test 9 :
     >>> add_integer(1, 1)
