@@ -46,39 +46,3 @@ test 7 :
     Traceback(most recent call last):
     ...
     OverflowError: cannot convert float infinity to integer
-
-test 8 :
-    >>> add_integer(1, 1)
-    2
-
-test 9 :
-    >>> add_integer(1, 1)
-    2
-
-test 10 :
-    >>> add_integer(1, 1)
-    2
-
-test 11 :
-    >>> add_integer(1, 1)
-    2
-
-test 12 :
-    >>> add_integer(1, 1)
-    2
-
-test 13 :
-    >>> add_integer(1, 1)
-    2
-
-test 14 :
-    >>> add_integer(1, 1)
-    2
-
-test 15 :
-    >>> add_integer(1, 1)
-    2
-
-test 16 :
-    >>> add_integer(1, 1)
-    2
