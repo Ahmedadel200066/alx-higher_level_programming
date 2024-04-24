@@ -36,3 +36,15 @@ test 7 :
     Traceback(most recent call last):
     ...
     OverflowError: cannot convert float infinity to integer
+
+test 8 :
+    >>> add_integer((2,), {"key": "value"})
+	Traceback (most recent call last):
+	...
+	TypeError: a must be an integer
+
+test 9 :
+    >>> add_integer(True, 1)
+	Traceback (most recent call last):
+	.....
+	TypeError: a must be an integer
