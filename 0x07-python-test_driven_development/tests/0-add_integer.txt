@@ -41,8 +41,8 @@ test 8 :
     100
 
 test 9 :
-    >>> add_integer(1, 1)
-    2
+    >>> add_integer(51, 49)
+    100
 
 test 10 :
     >>> add_integer(1, 1)
