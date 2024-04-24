@@ -37,8 +37,8 @@ test 6 :
     OverflowError: cannot convert float infinity to integer
 
 test 8 :
-    >>> add_integer(1, 1)
-    2
+    >>> add_integer(2)
+    100
 
 test 9 :
     >>> add_integer(1, 1)
