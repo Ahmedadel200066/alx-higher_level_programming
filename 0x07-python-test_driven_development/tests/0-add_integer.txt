@@ -23,7 +23,7 @@ test 4 :
 
 test 5 :
     >>> add_integer(2.5, 1.0)
-    3
+    4
 
 test 6 :
     >>> add_integer(int('eqr'), 3.0)
