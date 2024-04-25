@@ -6,13 +6,13 @@ import the function
 	>>> add_integer = __import__("0-add_integer").add_integer
 
 test -1 :
-	>>> z = __import__(0-add_integer).__doc__
-	>>> len(z)
+	>>> z = __import__("0-add_integer").__doc__
+	>>> len(z) > 1
 	True
 
 test 0 : 
-	>>> x =__import__(0-add_integer).add_integer.__doc__
-	>>> len(x)
+	>>> q = __import__("0-add_integer").add_integer.__doc__
+	>>> len(q) > 1
 	True
 
 test 1 :
