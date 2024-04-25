@@ -2,4 +2,18 @@ this is "2-matrix_divided.txt" test file
 --------------------------------------
 to test "matrix_divided" function
 --------------------------------------
- 
+    
+import the function:
+    >>>matrix_divided = __import__("2-matrix_divided").matrix_divided
+
+test -1 :
+    >>> x = __import__("2-matrix_divided").__doc__
+    >>> len(x) > 1
+    True
+
+test 0 : 
+    >>> y = __import__("2-matrix_divided").matrix_divided.__doc__
+    >>> len(y) > 1
+    True
+
+test 1 :
