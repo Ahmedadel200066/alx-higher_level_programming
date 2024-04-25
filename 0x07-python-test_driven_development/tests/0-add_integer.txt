@@ -29,7 +29,7 @@ test 6 :
     >>> add_integer(int(eqr), 3.0)
     Traceback(most recent call last):
     ...
-    ValueError: cannot convert string value to integer
+    NameError: name 'eqr' is not defined
 
 test 7 :
     >>> add_integer(1, float('inf'))
