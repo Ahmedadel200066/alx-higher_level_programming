@@ -3,57 +3,57 @@ the "0-add_integer" module
 the "add_integer" function
 ----------------------------
 import the function
-    >>> add_integer = __import__("0-add_integer").add_integer
+	>>> add_integer = __import__("0-add_integer").add_integer
 
 test 1 :
-    >>> add_integer(1, 1)
-    2
+	>>> add_integer(1, 1)
+	2
 
 test 2 :
-    >>> add_integer(1, -5)
-    -4
+	>>> add_integer(1, -5)
+	-4
 
 test 3 :
-    >>> add_integer(3, 1.0)
-    4
+	>>> add_integer(3, 1.0)
+	4
 
 test 4 :
-    >>> add_integer(4.0, 1.0)
-    5
+	>>> add_integer(4.0, 1.0)
+	5
 
 test 5 :
-    >>> add_integer(2.5, 1.0)
-    3
+	>>> add_integer(2.5, 1.0)
+	3
 
 test 8 :
-    >>> add_integer((2,), {"key": "value"})
+	>>> add_integer((2,), {"key": "value"})
 	Traceback (most recent call last):
 	...
 	TypeError: a must be an integer
 
 test 9 :
-    >>> add_integer(True, 1)
-    Traceback (most recent call last):
-    ...
-    TypeError: a must be an integer
+	>>> add_integer(True, 1)
+	Traceback (most recent call last):
+	...
+	TypeError: a must be an integer
 
 test 9 :
-    >>> add_integer(0, False)
+	>>> add_integer(0, False)
 	Traceback (most recent call last):
 	...
 	TypeError: b must be an integer
 
 test 10 :
-    >>> add_integer()
+	>>> add_integer()
 	Traceback (most recent call last):
 	...
 	TypeError: add_integer() missing 1 required positional argument: 'a'
 
 test 11 :
-    Checking one arg:
+	Checking one arg:
 	>>> add_integer(1)
 	99
 
 test 12 :
-    >>> add_integer(999999999999999999999999999999, 1)
+	>>> add_integer(999999999999999999999999999999, 1)
 	1000000000000000000000000000000
