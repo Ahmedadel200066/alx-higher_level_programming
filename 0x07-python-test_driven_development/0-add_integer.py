@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 
 """this is awesome"""
+
+
 def add_integer(a, b=98):
     """this function like this sympol +"""
     if type(a) is not int and type(a) is not float:
