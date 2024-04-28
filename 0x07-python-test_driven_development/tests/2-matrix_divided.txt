@@ -80,3 +80,7 @@ test 10 :
     ....
     TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
 
+test 11 :
+    >>> matrix = [ [1, 2, 3], [4, 5, 6] ]
+    >>> matrix_divided(matrix, float("inf"))
+    [[0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
