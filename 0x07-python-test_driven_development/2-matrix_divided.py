@@ -16,5 +16,6 @@ def matrix_divided(matrix, div):
     if div == 0:
         raise ZeroDivisionError("division by zero")
     else:
-        matrixnew = [list(map(lambda a: round(a/div, 2), num)) for num in matrix]
+        matrixnew = [list(map(lambda a: round(a/div, 2), num))
+                     for num in matrix]
         return matrixnew
