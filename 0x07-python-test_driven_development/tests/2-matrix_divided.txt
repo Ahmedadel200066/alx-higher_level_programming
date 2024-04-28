@@ -55,8 +55,28 @@ test 6 :
     TypeError: matrix must be a matrix (list of lists) of integers/floats
 
 test 7 :
-    >>> matrix = [ [1, 2, 3], [4, 5, "lol"] ]
+    >>> matrix = [ [1, 2, 3], [4, 5, "dola"] ]
     >>> matrix_divided(matrix, 2)
     Traceback (most recent call last):
     .....
     TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+test 8 :
+    >>> matrix = [ [1.5, 2, 3], [4, 5, 6] ]
+    >>> matrix_divided(matrix, 2)
+    [[0.75, 1.0, 1.5], [2.0, 2.5, 3.0]]
+
+test 9 : 
+    >>> matrix = [ [1.5, 2, 3], [4, 5, 6] ]
+    >>> matrix_divided(matrix)
+    Traceback (most recent call last):
+    ....
+    TypeError: matrix_divided() missing 1 required positional argument: 'div'
+
+test 10 :
+    >>> matrix = [ [1.5, 2, 3], [4, 5, 6] ]
+    >>> matrix_divided()
+    Traceback (most recent call last):
+    ....
+    TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
+
