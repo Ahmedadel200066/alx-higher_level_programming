@@ -8,7 +8,7 @@ def matrix_divided(matrix, div):
         for row in matrix:
             if type(row) is not list:
                 for j in row:
-                    if type(j) is not int and type(j) is not float:
+                    if not isinstance(j,(int,float)):
                         raise TypeError(
                             "matrix must be a matrix \
                                 (list of lists) of integers/floats")
