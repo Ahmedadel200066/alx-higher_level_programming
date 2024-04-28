@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-
+"""this module is dealing with matrix"""
 def matrix_divided(matrix, div):
+    """this function that divides all elements of a matrix"""
     if type(matrix) is not list:
         for row in matrix:
             if type(row) in matrix is not list:
