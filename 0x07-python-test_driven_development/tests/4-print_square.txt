@@ -16,3 +16,33 @@ test 0 :
     >>> len(y) > 1
     True
 
+test 1 :
+    >>> print_square(4)
+    ####
+    ####
+    ####
+    ####
+
+test 2 :
+    >>> print_square(-3)
+    Traceback (most recent call last):
+    ....
+    ValueError: size must be >= 0
+
+test 3 :
+    >>> print_square(3.5)
+    Traceback (most recent call last):
+    ....
+    TypeError: size must be an integer
+
+test 4 :
+    >>> print_square(-3.5)
+    Traceback (most recent call last):
+    ....
+    TypeError: size must be an integer
+
+test 5 :
+    >>> print_square()
+    Traceback (most recent call last):
+    ....
+    TypeError: print_square() missing 1 required positional argument: 'size'
