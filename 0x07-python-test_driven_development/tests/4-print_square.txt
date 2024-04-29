@@ -4,15 +4,15 @@ to test "print_square" function
 --------------------------------------
     
 import the function:
-    >>> print_square = __import__("4-print_square.txt").print_square
+    >>> print_square = __import__("4-print_square").print_square
 
 test -1 :
-    >>> x = __import__("4-print_square.txt").__doc__
+    >>> x = __import__("4-print_square").__doc__
     >>> len(x) > 1
     True
 
 test 0 : 
-    >>> y = __import__("4-print_square.txt").print_square.__doc__
+    >>> y = __import__("4-print_square").print_square.__doc__
     >>> len(y) > 1
     True
 
