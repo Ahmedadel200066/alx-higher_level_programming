@@ -1,0 +1,19 @@
+this is "3-say_my_name.txt" test file 
+--------------------------------------
+to test "say_my_name" function
+--------------------------------------
+    
+import the function:
+    >>> say_my_name = __import__("3-say_my_name").say_my_name
+
+test -1 :
+    >>> x = __import__("3-say_my_name").__doc__
+    >>> len(x) > 1
+    True
+
+test 0 : 
+    >>> y = __import__("3-say_my_name").say_my_name.__doc__
+    >>> len(y) > 1
+    True
+
+test 1 :
