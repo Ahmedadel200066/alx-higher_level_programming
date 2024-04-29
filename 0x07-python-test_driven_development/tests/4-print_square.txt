@@ -1,0 +1,18 @@
+this is "4-print_square.txt" test file 
+--------------------------------------
+to test "print_square" function
+--------------------------------------
+    
+import the function:
+    >>> print_square = __import__("4-print_square.txt").say_my_name
+
+test -1 :
+    >>> x = __import__("4-print_square").__doc__
+    >>> len(x) > 1
+    True
+
+test 0 : 
+    >>> y = __import__("4-print_square").say_my_name.__doc__
+    >>> len(y) > 1
+    True
+
