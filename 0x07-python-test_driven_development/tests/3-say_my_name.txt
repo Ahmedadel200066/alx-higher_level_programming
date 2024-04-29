@@ -20,34 +20,30 @@ test 1 :
     >>> say_my_name("Ahmed", "Adel")
     My name is Ahmed Adel
 
-test 1 :
-    >>> say_my_name("Heisenberg")
-    My name is Heisenberg
-
-test 2 :
+test 3 :
     >>> say_my_name()
     Traceback (most recent call last):
     ....
     TypeError: say_my_name() missing 1 required positional argument: 'first_name'
 
-test 3 :
+test 4 :
     >>> say_my_name(11,12)
     Traceback (most recent call last):
     ...
     TypeError: first_name must be a string
 
-test 4 :
+test 5 :
     >>> say_my_name("Dola", 24)
     Traceback (most recent call last):
     ....
     TypeError: last_name must be a string
 
-test 1 :
+test 6 :
     >>> say_my_name(Heisenberg)
     Traceback (most recent call last):
     ....
     NameError: name 'Heisenberg' is not defined
 
-test6:
+test 7 :
     >>> say_my_name("Dola", "24")
     My name is Dola 24
