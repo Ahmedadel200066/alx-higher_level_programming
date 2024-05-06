@@ -1,16 +1,18 @@
 #!/usr/bin/python3
 
 """ this module for text indentation"""
+
+
 def text_indentation(text):
     """
     Splits the given text into paragraphs based on the occurrence of certain punctuation marks.
-    
+
     Args:
         text (str): The input text to be split into paragraphs.
-        
+
     Raises:
         TypeError: If the input text is not a string.
-        
+
     Returns:
         None
     """
