@@ -5,7 +5,7 @@
 
 def text_indentation(text):
     """
-    Splits the given text into paragraphs based on the occurrence of certain punctuation marks.
+    Splits the given text into paragraphs based on 
 
     Args:
         text (str): The input text to be split into paragraphs.
