@@ -1,4 +1,3 @@
-from typing import List
 #!/usr/bin/python3
 
 """this class is for list"""
