@@ -19,5 +19,4 @@ class MyList(list):
         Returns:
             list: The sorted list.
         """
-        print (sorted(self))
-
+        print(sorted(self))
