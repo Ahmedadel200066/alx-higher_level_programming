@@ -1,4 +1,4 @@
-#!/bin/usr/python3
+#!/usr/bin/python3
 
 """this method takes an obj as input and"""
 
