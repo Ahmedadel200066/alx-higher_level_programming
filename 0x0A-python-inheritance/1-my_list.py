@@ -12,5 +12,5 @@ class MyList(list):
         Returns:
             list: The sorted list.
         """
-        x = sorted(self)
+        x= list(sorted(self))
         return x
