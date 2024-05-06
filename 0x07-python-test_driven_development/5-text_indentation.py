@@ -3,13 +3,31 @@
 
 
 def text_indentation(text):
-    """  prints a text with 2 new lines after each of these characters: ., ? and : """
+    """
+    Splits the given text into paragraphs based on 
+
+    Args:
+        text (str): The input text to be split into paragraphs.
+
+    Raises:
+        TypeError: If the input text is not a string.
+
+    Returns:
+        None
+    """
     if type(text) is not str:
         raise TypeError("text must be a string")
-    x = 0
-    while x < len(text):
-        print(text[x], end="")
-        if text[x] in ".?:":
-            x += 1
-            print("\n")
-        x += 1
+    mark = 0
+    for a in text:
+        if mark == 0:
+            if a == ' ':
+                continue
+            else:
+                mark = 1
+        if mark == 1:
+            if a == '?' or a == '.' or a == ':':
+                print(a)
+                print()
+                mark = 0
+            else:
+                print(a, end="")
