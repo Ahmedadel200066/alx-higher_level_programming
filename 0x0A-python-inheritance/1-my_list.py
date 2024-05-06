@@ -14,4 +14,3 @@ class MyList(list):
         """
         x = sorted(self)
         return x
-        
