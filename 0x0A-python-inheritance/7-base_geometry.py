@@ -2,6 +2,7 @@
 
 """This module defines the BaseGeometry class."""
 
+
 class BaseGeometry():
     """ 
     BaseGeometry class 
@@ -35,8 +36,6 @@ class BaseGeometry():
             ValueError: If the value is less than or equal to 0.
         """
         if type(value) is not int:
-            raise TypeError\
-                ("{} must be an integer".format(name))
+            raise TypeError("{} must be an integer".format(name))
         elif value <= 0:
-            raise ValueError\
-                ("{} must be greater than 0".format(name))
+            raise ValueError("{} must be greater than 0".format(name))
