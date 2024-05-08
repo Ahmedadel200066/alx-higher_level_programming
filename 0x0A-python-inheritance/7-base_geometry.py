@@ -4,13 +4,14 @@
 
 class BaseGeometry():
     """ 
-    BaseGeometry class represents the base class for geometrical shapes.
+    BaseGeometry class 
+    represents the base class for geometrical shapes.
 
     Methods:
         - area(): Raises an exception indicating 
                   that the method is not implemented.
-        - integer_validator(name, value): Validates if a given value
-                                          is an integer and greater than 0.
+        - integer_validator(name, value): 
+        Validates if a given value is an integer and greater than 0.
 
     """
 
