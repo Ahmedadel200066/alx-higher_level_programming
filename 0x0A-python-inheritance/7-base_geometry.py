@@ -2,7 +2,7 @@
 """This module defines the BaseGeometry class."""
 
 
-class BaseGeometry():
+class BaseGeometry:
     """represents the base class for geometrical shapes."""
 
     def area(self):
@@ -16,5 +16,5 @@ class BaseGeometry():
         """given value is an integer and greater than 0"""
         if type(value) is not int:
             raise TypeError("{:s} must be an integer".format(name))
-        if value <= 0:
+        elif value <= 0:
             raise ValueError("{:s} must be greater than 0".format(name))
