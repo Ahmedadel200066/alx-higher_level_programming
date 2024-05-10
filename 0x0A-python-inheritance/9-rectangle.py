@@ -7,7 +7,7 @@ This module defines the Rectangle class, which represents a rectangle.
 rectangle_8 = __import__('8-rectangle.py').Rectangle
 
 
-class Rectangle(rectangle_8):
+class Rectangle3(rectangle_8):
     """
     Represents a rectangle.
 
@@ -15,6 +15,21 @@ class Rectangle(rectangle_8):
         __width (int): The width of the rectangle.
         __height (int): The height of the rectangle.
     """
+
+
+def __init__(self, width, height):
+        """
+        Initializes a new instance of the Rectangle class.
+
+        Args:
+            width (int): The width of the rectangle.
+            height (int): The height of the rectangle.
+        """
+        self.integer_validator("width", width)
+        self.__width = width
+
+        self.integer_validator("height", height)
+        self.__height = height
 
     def area(self):
         """Calculates the area of the rectangle.
