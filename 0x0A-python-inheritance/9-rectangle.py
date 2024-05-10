@@ -1,13 +1,9 @@
 #!/usr/bin/python3
 
-"""
-This module defines the Rectangle class, which represents a rectangle.
-"""
-
-rectangle_8 = __import__('8-rectangle.py').Rectangle
+"""This module defines the Rectangle class"""
 
 
-class Rectangle3(rectangle_8):
+class Rectangle3():
     """
     Represents a rectangle.
 
