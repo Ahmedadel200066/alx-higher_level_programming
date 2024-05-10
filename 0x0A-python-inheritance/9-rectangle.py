@@ -17,7 +17,7 @@ class Rectangle3(rectangle_8):
     """
 
 
-def __init__(self, width, height):
+    def __init__(self, width, height):
         """
         Initializes a new instance of the Rectangle class.
 
