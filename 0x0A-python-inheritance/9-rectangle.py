@@ -21,11 +21,12 @@ class Rectangle(BaseGeometry):
             width (int): The width of the rectangle.
             height (int): The height of the rectangle.
         """
-        self.integer_validator("width", width)
-        self.__width = width
-            
-        self.integer_validator("height", height)
-        self.__height = height
+        if type(width) is int :
+            self.integer_validator("width", width)
+            self.__width = width
+        if type(height) is int :
+            self.integer_validator("height", height)
+            self.__height = height
 
     def area(self):
         """Calculates the area of the rectangle.
