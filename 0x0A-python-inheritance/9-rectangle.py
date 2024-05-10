@@ -3,7 +3,7 @@
 """This module defines the Rectangle class"""
 
 
-class Rectangle3():
+class Rectangle():
     """
     Represents a rectangle.
 
