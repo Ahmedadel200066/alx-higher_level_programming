@@ -25,7 +25,6 @@ class Square(Rectangle):
             size (int): The size of the square.
         """
         super().__init__(size, size)
-        if type(size) is int:
             if size >= 0:
                 self.integer_validator("size", size)
                 self.__size = size
