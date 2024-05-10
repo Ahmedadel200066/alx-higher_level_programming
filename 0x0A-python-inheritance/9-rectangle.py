@@ -4,10 +4,10 @@
 This module defines the Rectangle class, which represents a rectangle.
 """
 
-from 8-rectangle import Rectangle
+rectangle_8 = __import__('8-rectangle.py').Rectangle
 
 
-class Rectangle3(Rectangle):
+class Rectangle3(rectangle_8):
     """
     Represents a rectangle.
 
@@ -15,7 +15,6 @@ class Rectangle3(Rectangle):
         __width (int): The width of the rectangle.
         __height (int): The height of the rectangle.
     """
-
 
     def __init__(self, width, height):
         """
