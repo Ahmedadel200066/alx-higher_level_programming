@@ -3,7 +3,6 @@
 the header of the response.
 """
 
-
 if __name__ == "__main__":
     from urllib.request import urlopen
     from urllib.error import HTTPError
