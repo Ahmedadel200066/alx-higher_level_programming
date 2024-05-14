@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 import urllib.request
-
+"""this module for get fetch"""
 def fetch_status(url):
     """
     Fetches the HTTP status code, content type, and response content from a given URL.
