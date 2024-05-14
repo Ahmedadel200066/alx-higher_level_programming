@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 
-
 import urllib.request
-
 
 def fetch_status(url):
     """
