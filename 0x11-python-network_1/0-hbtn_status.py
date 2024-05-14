@@ -1,41 +1,15 @@
 #!/usr/bin/python3
+"""
+This script fetches the status of the URL 'https://alx-intranet.hbtn.io/status'
+and prints the response body, its type, and the UTF-8 decoded content.
+"""
 
-import urllib.request
-"""this module for get fetch"""
-def fetch_status(url):
-    """
-    Fetches the HTTP status code, content type, and response content from a given URL.
+if __name__ == "__main__":
+    import urllib.request
 
-    Args:
-        url (str): The URL to fetch the status from.
-
-    Returns:
-        None
-
-    Prints:
-        HTTP Status Code: The HTTP status code of the response.
-        Content-Type: The content type of the response.
-        Response Content: The content of the response.
-    """
-    try:
-        # Open the URL
-        with urllib.request.urlopen(url) as response:
-            # Read the content of the response
-            content = response.read()
-            # Get the HTTP status code
-            status_code = response.status
-            # Get the content type header
-            content_type = response.getheader('Content-Type')
-
-            # Print out the results
-            print("HTTP Status Code:", status_code)
-            print("Content-Type:", content_type)
-            print("Response Content:", content)
-    except urllib.error.URLError as e:
-        print("Failed to reach the server.")
-        print("Reason:", e.reason)
-    except urllib.error.HTTPError as e:
-        print("The server couldn't fulfill the request.")
-        print("Error code:", e.code)
-    except Exception as e:
-        print("An error occurred:", str(e))
+    with urllib.request.urlopen('https://alx-intranet.hbtn.io/status') as res:
+        content = res.read()
+        print("Body response:")
+        print("\t- type: {}".format(type(content)))
+        print("\t- content: {}".format(content))
+        print("\t- utf8 content: {}".format(content.decode('utf-8')))
