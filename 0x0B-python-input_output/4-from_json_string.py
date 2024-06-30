@@ -4,6 +4,7 @@ This module provides a function to convert a JSON string representation into a P
 """
 import json
 
+
 def from_json_string(my_str):
     """
     Converts a JSON string representation into a Python object.
@@ -13,6 +14,5 @@ def from_json_string(my_str):
 
     Returns:
         The Python object representation of the JSON string.
-
     """
     return json.loads(my_str)
