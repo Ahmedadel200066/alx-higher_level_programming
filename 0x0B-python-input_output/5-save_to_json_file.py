@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""this module to writes an Object to a text file, using a JSON representation"""
+"""writes an Object to a text file, using a JSON representation"""
 import json
 
 
