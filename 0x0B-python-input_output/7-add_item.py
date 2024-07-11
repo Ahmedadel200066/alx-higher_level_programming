@@ -13,7 +13,7 @@ if os.path.exists("add_item.json"):
     New_file = load_from_json_file("add_item.json")
 else:
     New_file = []
-    
+
 New_file.extend(sys.argv[1:])
 
 save_to_json_file(New_file, "add_item.json")
