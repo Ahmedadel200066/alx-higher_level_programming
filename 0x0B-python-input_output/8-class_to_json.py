@@ -11,9 +11,8 @@ def class_to_json(obj):
         obj: The object to be converted.
 
     Returns:
-        A dictionary representation of the object, where the keys are the attribute names
+        A dictionary representation of the object,
         and the values are the attribute values.
 
     """
-    return {key: value for key, value in obj.__dict__.items() \
-            if isinstance(value, (list, dict, str, int, bool))}
+    return obj.__dict__
