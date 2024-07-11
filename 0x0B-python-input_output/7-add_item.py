@@ -8,11 +8,10 @@ save_to_json_file = __import__("5-save_to_json_file").save_to_json_file
 
 
 if os.path.exists("add_item.json"):
-    b = load_from_json_file("add_item.json")
+    New_file = load_from_json_file("add_item.json")
 else:
-    b = []
+    New_file = []
+    
+New_file.extend(sys.argv[1:])
 
-a = sys.argv[1:]
-b.extend(a)
-
-save_to_json_file(b, "add_item.json")
+save_to_json_file(New_file, "add_item.json")
