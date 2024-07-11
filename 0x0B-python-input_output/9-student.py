@@ -25,4 +25,4 @@ class Student:
         Returns:
             dict: A dictionary containing the student's attributes.
         """
-        return self.__class__
+        return self.__dict__
