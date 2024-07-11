@@ -15,6 +15,5 @@ if (os.path.exists("add_item.json")):
     new_save = load_from_json_file("add_item.json")
 else:
     new_save = []
-    save_to_json_file([], "add_itme.json")
     new_save.extend(sys.argv[1:])
     save_to_json_file(new_save, "add_item.json")
