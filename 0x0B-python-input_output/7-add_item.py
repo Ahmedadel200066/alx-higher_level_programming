@@ -1,12 +1,6 @@
 #!/usr/bin/python3
 """This module is about managing a JSON file.
 
-This script allows you to add items to a JSON file. It checks if the file
-"add_item.json" exists. If it does, it loads the existing data from the file.
-If it doesn't exist, it creates an empty list and saves it to the file. Then,
-it appends the command line arguments to the list and saves the updated list
-back to the file.
-
 Functions:
 - save_to_json_file: Saves Python objects to a JSON file.
 - load_from_json_file: Loads Python objects from a JSON file.
