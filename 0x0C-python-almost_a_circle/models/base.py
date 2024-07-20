@@ -3,28 +3,12 @@
 module Base
 """
 class Base:
-    """
-    Base class
-    """
-
+    
     __nb_objects = 0
-
+    
     def __init__(self, id=None):
-        """
-        init - DG 3mr 7a7a remix
-        Args:
-            id: object id
-        """
-        if id is not None :
+        
+        if id in None :
+            __nb_objects = __nb_objects + 1
+        else:
             self.id = id
-        else :
-            Base.__nb_objects += 1
-            
-  
-  
-
-
-
-
-
-
