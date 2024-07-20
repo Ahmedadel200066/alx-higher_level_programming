@@ -2,13 +2,23 @@
 """
 module Base
 """
+
+
 class Base:
-    
+    """
+    The Base class serves as the base class for other classes in the project.
+    """
+
     __nb_objects = 0
-    
+
     def __init__(self, id=None):
-        
-        if id in None :
+        """
+        Initializes a new instance of the Base class.
+
+        Args:
+            id (int): The ID of the instance. Defaults to None.
+        """
+        if id is None:
             __nb_objects = __nb_objects + 1
         else:
             self.id = id
