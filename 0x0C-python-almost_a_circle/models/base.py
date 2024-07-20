@@ -19,7 +19,7 @@ class Base:
             id (int): The ID of the instance. Defaults to None.
         """
         if id is None:
-            Base.__nb_objects =+ 1
+            Base.__nb_objects = + 1
             self.id = Base.__nb_objects
         else:
             self.id = id
