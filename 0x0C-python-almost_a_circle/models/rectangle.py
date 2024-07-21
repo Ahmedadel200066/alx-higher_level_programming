@@ -173,7 +173,7 @@ class Rectangle(Base):
         Args:
             *args: Variable length argument
             list containing the new values for the attributes.
-                   The order of the arguments 
+                   The order of the arguments
                    should match the order of the attributes:
                    id, width, height, x, y.
         """
