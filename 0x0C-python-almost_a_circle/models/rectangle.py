@@ -164,14 +164,14 @@ class Rectangle(Base):
             print("")
             
     def __str__(self):
-            """
-            Returns a string representation of the Rectangle object.
+        """
+        Returns a string representation of the Rectangle object.
 
-            The string includes the class name, object ID, coordinates (x, y),
-            and dimensions (width, height) of the Rectangle.
+        The string includes the class name, object ID, coordinates (x, y),
+        and dimensions (width, height) of the Rectangle.
 
-            Returns:
-                A string representation of the Rectangle object.
-            """
-            return f"[Rectangle] ({self.id}) {self.x}/{self.y} - \
+        Returns:
+            A string representation of the Rectangle object.
+        """
+        return f"[Rectangle] ({self.id}) {self.x}/{self.y} - \
 {self.width}/{self.height}"
