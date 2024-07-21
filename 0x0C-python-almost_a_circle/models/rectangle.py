@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-
+"""rectangle module"""
 from models.base import Base
 
-"""rectangle module"""
+
 class Rectangle(Base):
     """
     Represents a rectangle object.
