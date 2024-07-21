@@ -167,7 +167,7 @@ class Rectangle(Base):
                 print("#", end="")
             print("")
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """Update the attributes of the rectangle.
 
         Args:
@@ -180,6 +180,8 @@ class Rectangle(Base):
         attributes = ['id', 'width', 'height', 'x', 'y']
         for attr, value in zip(attributes, args):
             setattr(self, attr, value)
+        for key, value2 in kwargs.items():
+            setattr(self, key, value2)
 
     def __str__(self):
         """
