@@ -134,7 +134,7 @@ class Rectangle(Base):
             ValueError: If the value is not within the specified range.
 
         """
-        if type(value) is not int:
+        if not isinstance(value,int):
             raise TypeError(f"{name} must be an integer")
         if check:
             if value <= 0:
