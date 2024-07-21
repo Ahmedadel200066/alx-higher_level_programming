@@ -53,6 +53,7 @@ class Rectangle(Base):
         Args:
             width (int): The new width of the rectangle.
         """
+        self.Validate("width", width)
         self.__width = width
 
     @property
@@ -73,6 +74,7 @@ class Rectangle(Base):
         Args:
             height (int): The new height of the rectangle.
         """
+        self.Validate("height", height)
         self.__height = height
 
     @property
@@ -93,6 +95,7 @@ class Rectangle(Base):
         Args:
             x (int): The new x-coordinate of the rectangle's position.
         """
+        self.Validate("x", x, check=False)
         self.__x = x
 
     @property
@@ -113,4 +116,29 @@ class Rectangle(Base):
         Args:
             y (int): The new y-coordinate of the rectangle's position.
         """
+        self.Validate("y", y, check=False)
         self.__y = y
+
+    def Validate(self, name, value, check=True):
+        """
+        Validates the value of a given attribute.
+
+        Args:
+            name (str): The name of the attribute.
+            value (int): The value to be validated.
+            check (bool, optional): 
+            Specifies whether to perform additional checks. Defaults to True.
+
+        Raises:
+            TypeError: If the value is not an integer.
+            ValueError: If the value is not within the specified range.
+
+        """
+        if value is not int:
+            raise TypeError(f"{name} must be an integer")
+        if check:
+            if value <= 0:
+                raise ValueError(f"{name} must be > 0")
+        else:
+            if value < 0:
+                raise ValueError(f"{name} must be >= 0")
