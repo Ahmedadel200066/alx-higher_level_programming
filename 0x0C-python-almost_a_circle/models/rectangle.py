@@ -154,10 +154,10 @@ class Rectangle(Base):
         return self.width * self.height
 
     def display(self):
-            """
-            Displays the rectangle by printing '#' characters in the shape of the rectangle.
-            """
-            for a in range(self.height):
-                for b in range(self.width):
-                    print("#",end="")
-                print("")
+        """
+        Displays the rectangle by printing '#' characters in the shape of the rectangle.
+        """
+        for a in range(self.height):
+            for b in range(self.width):
+                print("#", end="")
+            print("")
