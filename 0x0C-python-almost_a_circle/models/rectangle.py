@@ -126,7 +126,7 @@ class Rectangle(Base):
         Args:
             name (str): The name of the attribute.
             value (int): The value to be validated.
-            check (bool, optional): 
+            check (bool, optional):
             Specifies whether to perform additional checks.
             Defaults to True.
 
