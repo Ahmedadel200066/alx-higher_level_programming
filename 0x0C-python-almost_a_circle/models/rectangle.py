@@ -158,10 +158,14 @@ class Rectangle(Base):
         Displays the rectangle by printing '#' characters
         in the shape of the rectangle.
         """
+        for z in range(self.x):
+            print()
         for a in range(self.height):
-            for b in range(self.width):
-                print("#", end="")
-            print("")
+                for j in range(self.y):
+                    print(" ",end="")
+                for b in range(self.width):
+                    print("#", end="")
+                print("")
 
     def __str__(self):
         """
