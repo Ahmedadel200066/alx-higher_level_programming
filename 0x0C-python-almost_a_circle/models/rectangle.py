@@ -155,7 +155,8 @@ class Rectangle(Base):
 
     def display(self):
         """
-        Displays the rectangle by printing '#' characters in the shape of the rectangle.
+        Displays the rectangle by printing '#' characters
+        in the shape of the rectangle.
         """
         for a in range(self.height):
             for b in range(self.width):
