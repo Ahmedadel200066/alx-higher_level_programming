@@ -28,3 +28,19 @@ class Square(Rectangle):
     def size(self, size):
         self.width = size
         self.height = size
+
+    def update(self, *args, **kwargs):
+        """
+        Updates the attributes of the Square instance.
+
+        Args:
+            *args: Variable length argument list containing the new values for the attributes.
+            **kwargs: Keyword arguments containing the new values for the attributes.
+        """
+
+        collo = ("id", "size", "x", "y")
+        for attrr, valuee in zip(collo, args):
+            setattr(self, attrr, valuee)
+
+        for atr, value in kwargs.items():
+            setattr(self, atr, value)
