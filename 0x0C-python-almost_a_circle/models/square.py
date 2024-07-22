@@ -34,8 +34,10 @@ class Square(Rectangle):
         Updates the attributes of the Square instance.
 
         Args:
-            *args: Variable length argument list containing the new values for the attributes.
-            **kwargs: Keyword arguments containing the new values for the attributes.
+            *args: Variable length argument list
+            containing the new values for the attributes.
+            **kwargs: Keyword arguments containing
+            the new values for the attributes.
         """
 
         collo = ("id", "size", "x", "y")
