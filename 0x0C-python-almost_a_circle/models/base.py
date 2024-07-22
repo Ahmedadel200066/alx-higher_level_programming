@@ -2,6 +2,7 @@
 """
 module Base
 """
+import json
 
 
 class Base:
@@ -23,3 +24,19 @@ class Base:
             self.id = Base.__nb_objects
         else:
             self.id = id
+
+
+    def to_json_string(list_dictionaries):
+        """
+        Convert a list of dictionaries to a JSON string representation.
+
+        Args:
+            list_dictionaries (list): A list of dictionaries.
+
+        Returns:
+            str: A JSON string representation of the list of dictionaries.
+        """
+        if list_dictionaries is None:
+            return "[]"
+        else:
+            return json.dumps(list_dictionaries)
