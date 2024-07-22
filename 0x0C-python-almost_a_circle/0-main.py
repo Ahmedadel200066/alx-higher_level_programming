@@ -1,24 +1,40 @@
-#!/usr/bin/python3
-""" 9-main """
-from models.square import Square
+import matplotlib.pyplot as plt
+import matplotlib.patches as patches
+from matplotlib.offsetbox import OffsetImage, AnnotationBbox
+import networkx as nx
 
-if __name__ == "__main__":
+# Initialize the directed graph
+G = nx.DiGraph()
 
-    s1 = Square(5)
-    print(s1)
-    print(s1.area())
-    s1.display()
+# Add nodes
+nodes = [
+    "Start", 
+    "Define `collo`", 
+    "Zip `collo` and `args`", 
+    "For each `(attrr, valuee)` in `zip(collo, args)`", 
+    "Set attribute `attrr` to `valuee`", 
+    "For each `(atr, value)` in `kwargs.items()`", 
+    "Set attribute `atr` to `value`", 
+    "End"
+]
+for node in nodes:
+    G.add_node(node)
 
-    print("---")
+# Add edges
+edges = [
+    ("Start", "Define `collo`"), 
+    ("Define `collo`", "Zip `collo` and `args`"), 
+    ("Zip `collo` and `args`", "For each `(attrr, valuee)` in `zip(collo, args)`"), 
+    ("For each `(attrr, valuee)` in `zip(collo, args)`", "Set attribute `attrr` to `valuee`"), 
+    ("Set attribute `attrr` to `valuee`", "For each `(atr, value)` in `kwargs.items()`"), 
+    ("For each `(atr, value)` in `kwargs.items()`", "Set attribute `atr` to `value`"), 
+    ("Set attribute `atr` to `value`", "End")
+]
+for edge in edges:
+    G.add_edge(*edge)
 
-    s2 = Square(2, 2)
-    print(s2)
-    print(s2.area())
-    s2.display()
-
-    print("---")
-
-    s3 = Square(3, 1, 3)
-    print(s3)
-    print(s3.area())
-    s3.display()
+# Draw the graph
+pos = nx.spring_layout(G)
+nx.draw(G, pos, with_labels=True, node_size=3000, node_color="skyblue", font_size=10, font_weight="bold", arrows=True, arrowstyle="->", arrowsize=10)
+plt.title("Flowchart for the `update` Method")
+plt.show()
