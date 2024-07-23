@@ -41,6 +41,23 @@ class Base:
         else:
             return json.dumps(list_dictionaries)
 
+    @staticmethod
+    def from_json_string(json_string):
+        """
+        Convert a JSON string representation to a Python object.
+
+        Args:
+            json_string (str): The JSON string to be converted.
+
+        Returns:
+            list: The Python object representation of the JSON string.
+
+        """
+        if json_string is None:
+            return "[]"
+        else:
+            return json.loads(json_string)
+
     @classmethod
     def save_to_file(cls, list_objs):
         """
